@@ -855,8 +855,6 @@ namespace gameanalytics
     }
 }
 
-#endif // !DM_PLATFORM_OSX && !DM_PLATFORM_HTML5
-
 #if defined(DM_PLATFORM_HTML5)
 #ifdef __cplusplus
 extern "C"
@@ -886,3 +884,5 @@ extern "C"
 }
 #endif
 #endif
+
+#endif // !DM_PLATFORM_OSX && !DM_PLATFORM_HTML5
