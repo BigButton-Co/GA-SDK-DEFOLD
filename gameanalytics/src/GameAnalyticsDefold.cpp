@@ -1,4 +1,4 @@
-#if !defined(DM_PLATFORM_OSX)
+#if !defined(DM_PLATFORM_OSX) && !defined(DM_PLATFORM_HTML5)
 
 #include "GameAnalyticsDefold.h"
 #if defined(DM_PLATFORM_IOS)
@@ -855,7 +855,7 @@ namespace gameanalytics
     }
 }
 
-#endif // !DM_PLATFORM_OSX
+#endif // !DM_PLATFORM_OSX && !DM_PLATFORM_HTML5
 
 #if defined(DM_PLATFORM_HTML5)
 #ifdef __cplusplus
