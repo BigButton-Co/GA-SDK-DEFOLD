@@ -1,3 +1,5 @@
+#if !defined(DM_PLATFORM_OSX)
+
 #include "GameAnalyticsDefold.h"
 #if defined(DM_PLATFORM_IOS)
 #include "ios/GameAnalyticsCpp.h"
@@ -852,6 +854,8 @@ namespace gameanalytics
         }
     }
 }
+
+#endif // !DM_PLATFORM_OSX
 
 #if defined(DM_PLATFORM_HTML5)
 #ifdef __cplusplus
